@@ -1,0 +1,565 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack Exclusivo de eBooks para Homens</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=JN78j40rvvu19bldUMBRLHSfqhkBut6NKEpLds_lEewgqgh7r23lvK5ZGQTYNw6cke8DpyzbsBD8xi-oWhhmDIKlfncBIAyADjurzLWHOifW51zRh97Ii3hfxFosRiP39CDI4Ot4RHPoKEe793MHfeCOtejxlpQJN-yBUJulM2_gTVZfM_4RV0FT8CsfMYDZWlGPXPSCOPHZ6BKjzTTiOg" charset="UTF-8"></script><script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f2f5;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 200% 200%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .instagram-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .search-results {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .buy-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .buy-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Instagram Floating Button -->
+    <a href="https://www.instagram.com/literatura_em_bytes/" target="_blank" class="instagram-float bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white rounded-full p-4 shadow-lg transition-all duration-300 flex items-center">
+        <i class="fab fa-instagram text-xl mr-2"></i>
+        <span class="font-bold">Siga-nos</span>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-gray-900 text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-book-open text-2xl mr-2 text-yellow-400"></i>
+                <h1 class="text-xl font-bold">Literatura em Bytes</h1>
+            </div>
+            <div class="relative w-full max-w-md mx-4">
+                <input type="text" id="searchInput" placeholder="Buscar eBooks..." class="w-full px-4 py-2 rounded-full bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                <button class="absolute right-3 top-2 text-gray-400">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div id="searchResults" class="absolute w-full bg-white mt-1 rounded-md shadow-lg z-10 search-results hidden">
+                    <!-- Search results will appear here -->
+                </div>
+            </div>
+            <div>
+                <a href="https://pay.kiwify.com.br/k4T2BlB" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded-full transition-all duration-300">
+                    Comprar Agora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Pack Exclusivo de eBooks para Homens</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Transforme sua vida com conhecimento prático em diversas áreas. 15 eBooks completos por apenas R$19,99!</p>
+            <div class="flex flex-wrap justify-center gap-4 mb-10">
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg px-6 py-3">
+                    <i class="fas fa-bolt text-yellow-300 mr-2"></i>
+                    <span>Acesso imediato</span>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg px-6 py-3">
+                    <i class="fas fa-download text-yellow-300 mr-2"></i>
+                    <span>Download direto</span>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg px-6 py-3">
+                    <i class="fas fa-infinity text-yellow-300 mr-2"></i>
+                    <span>Acesso vitalício</span>
+                </div>
+            </div>
+            <a href="https://pay.kiwify.com.br/k4T2BlB" target="_blank" class="buy-btn bg-yellow-500 hover:bg-yellow-600 text-gray-900 text-xl font-bold py-4 px-8 rounded-full inline-block transition-all duration-300 shadow-lg">
+                GARANTIR MEU PACK POR R$19,99
+            </a>
+        </div>
+    </section>
+
+    <!-- eBooks Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">O Que Você Vai Receber</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- eBook Cards -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-blue-200">
+                    <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-800">Educação Financeira</h3>
+                    <p class="text-gray-700">Aprenda a gerenciar seu dinheiro de forma inteligente e construir um futuro financeiro sólido.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-green-200">
+                    <div class="bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-800">Drible igual Neymar JR</h3>
+                    <p class="text-gray-700">Técnicas e segredos para aprimorar suas habilidades no futebol como o craque brasileiro.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-purple-200">
+                    <div class="bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-purple-800">Desvende o caminho para uma vida financeira firme e forte</h3>
+                    <p class="text-gray-700">Estratégias práticas para construir uma base financeira sólida e duradoura.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-red-200">
+                    <div class="bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-red-800">Desvendando código da atração masculina</h3>
+                    <p class="text-gray-700">Descubra os princípios que tornam um homem naturalmente atraente e magnético.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-yellow-200">
+                    <div class="bg-yellow-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-yellow-800">Desenvolvimento da beleza</h3>
+                    <p class="text-gray-700">Guia completo para cuidados pessoais, estética e bem-estar masculino.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-indigo-200">
+                    <div class="bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-indigo-800">Como se relacionar com Deus</h3>
+                    <p class="text-gray-700">Desenvolva uma conexão espiritual mais profunda e significativa em sua vida.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-pink-200">
+                    <div class="bg-pink-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-pink-800">Como lidar com o bullying</h3>
+                    <p class="text-gray-700">Estratégias eficazes para enfrentar e superar situações de bullying.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-teal-200">
+                    <div class="bg-teal-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-unlock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-teal-800">Se livre da pornografia</h3>
+                    <p class="text-gray-700">Um guia prático para superar o vício e recuperar o controle sobre sua vida.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-orange-200">
+                    <div class="bg-orange-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-orange-800">O melhor pai do mundo</h3>
+                    <p class="text-gray-700">Dicas e orientações para desenvolver uma paternidade consciente e amorosa.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-gray-200">
+                    <div class="bg-gray-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Mentalidade de Aço: Forjando a Nova Versão de Si Mesmo</h3>
+                    <p class="text-gray-700">Desenvolva uma mentalidade forte e resiliente para superar qualquer desafio.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-blue-200">
+                    <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-800">MANUAL DE AUTODEFESA RÁPIDA</h3>
+                    <p class="text-gray-700">Técnicas práticas para se defender de ataques verbais e preservar sua integridade.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-purple-200">
+                    <div class="bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-purple-800">Lei da atração ao favor do homem</h3>
+                    <p class="text-gray-700">Como utilizar os princípios da lei da atração para alcançar seus objetivos.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-green-200">
+                    <div class="bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-800">Homens modernos que inovam o guarda-roupa</h3>
+                    <p class="text-gray-700">Guia de estilo para o homem contemporâneo que deseja se vestir com personalidade.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-red-200">
+                    <div class="bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-red-800">Equilíbrio mental</h3>
+                    <p class="text-gray-700">Técnicas e práticas para manter a saúde mental e o bem-estar psicológico.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl shadow-md p-6 transition-all duration-300 card-hover border border-yellow-200">
+                    <div class="bg-yellow-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-yellow-800">Empreendedor do zero</h3>
+                    <p class="text-gray-700">O guia definitivo para iniciar seu próprio negócio sem experiência prévia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="comprar" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-gradient-to-br from-blue-800 to-purple-900 text-white p-8">
+                        <h2 class="text-3xl font-bold mb-6">Pack Completo de eBooks</h2>
+                        <div class="mb-6">
+                            <span class="text-sm line-through text-gray-300">De R$299,85</span>
+                            <div class="flex items-end">
+                                <span class="text-5xl font-bold">R$19</span>
+                                <span class="text-2xl font-bold">,99</span>
+                            </div>
+                            <p class="text-yellow-300 font-bold">Economize R$279,86 (93% OFF)</p>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                <span>15 eBooks completos</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                <span>Acesso imediato</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                <span>Download em PDF</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                <span>Acesso vitalício</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Oferta por tempo limitado!</h3>
+                        <p class="mb-6 text-gray-600">Aproveite esta oportunidade única de transformar sua vida com conhecimento de qualidade por um preço incrível.</p>
+                        <a href="https://pay.kiwify.com.br/k4T2BlB" target="_blank" class="buy-btn w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-4 rounded-lg transition-all duration-300 flex items-center justify-center text-xl">
+                            <i class="fas fa-lock mr-2"></i>
+                            COMPRAR AGORA
+                        </a>
+                        <div class="mt-4 text-center text-sm text-gray-600">
+                            <p>Pagamento 100% seguro</p>
+                            <div class="flex justify-center mt-2 space-x-2">
+                                <i class="fab fa-cc-visa text-2xl text-blue-800"></i>
+                                <i class="fab fa-cc-mastercard text-2xl text-red-600"></i>
+                                <i class="fab fa-cc-amex text-2xl text-blue-500"></i>
+                                <i class="fab fa-pix text-2xl text-green-600"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">O Que Nossos Clientes Dizem</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            R
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Ricardo Silva</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Os eBooks sobre educação financeira e empreendedorismo mudaram completamente minha visão sobre dinheiro. Já estou aplicando o conhecimento e vendo resultados!"</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            M
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Marcos Oliveira</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"O eBook sobre equilíbrio mental chegou em um momento crucial da minha vida. As técnicas são simples mas extremamente eficazes. Recomendo!"</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            L
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Lucas Mendes</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Melhor investimento que fiz! O conteúdo é prático e direto ao ponto. O guia de estilo modernizou completamente meu visual."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Perguntas Frequentes</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full text-left p-6 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Como recebo os eBooks após a compra?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-700">Após a confirmação do pagamento, você receberá um e-mail com os links para download de todos os eBooks em formato PDF. O acesso é imediato e você pode baixar em qualquer dispositivo.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full text-left p-6 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Posso ler os eBooks no celular?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-700">Sim! Todos os eBooks estão em formato PDF, compatível com qualquer dispositivo: smartphone, tablet ou computador. Você pode ler onde e quando quiser.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full text-left p-6 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Quais formas de pagamento são aceitas?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-700">Aceitamos cartões de crédito (Visa, Mastercard, American Express), boleto bancário e Pix. Todas as transações são processadas em ambiente seguro.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-btn w-full text-left p-6 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-bold">Por quanto tempo terei acesso aos eBooks?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-700">O acesso é vitalício! Uma vez que você faz o download dos eBooks, eles são seus para sempre. Você pode ler e reler quantas vezes quiser.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-800 to-purple-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Não perca esta oportunidade!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">15 eBooks completos que vão transformar sua vida por apenas R$19,99. Oferta por tempo limitado!</p>
+            <a href="https://pay.kiwify.com.br/k4T2BlB" target="_blank" class="buy-btn bg-yellow-500 hover:bg-yellow-600 text-gray-900 text-xl font-bold py-4 px-8 rounded-full inline-block transition-all duration-300 shadow-lg">
+                GARANTIR MEU PACK AGORA
+            </a>
+            <p class="mt-6 text-sm opacity-80">Pagamento 100% seguro | Acesso imediato | Acesso vitalício</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-book-open text-2xl mr-2 text-yellow-400"></i>
+                        <h2 class="text-xl font-bold">Literatura em Bytes</h2>
+                    </div>
+                    <p class="mt-2 text-gray-400">Conhecimento que transforma vidas</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/literatura_em_bytes/" target="_blank" class="hover:text-yellow-400 transition-colors duration-300">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-yellow-400 transition-colors duration-300">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-yellow-400 transition-colors duration-300">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="border-gray-800 my-6">
+            <div class="text-center text-gray-400 text-sm">
+                <p>&copy; 2023 Literatura em Bytes. Todos os direitos reservados.</p>
+                <div class="mt-2 flex justify-center space-x-4">
+                    <a href="#" class="hover:text-yellow-400 transition-colors duration-300">Termos de Uso</a>
+                    <a href="#" class="hover:text-yellow-400 transition-colors duration-300">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+        const ebooks = [
+            "Educação financeira",
+            "Drible igual Neymar JR",
+            "Desvende o caminho para uma vida financeira firme e forte",
+            "Desvendando código da atração masculina",
+            "Desenvolvimento da beleza",
+            "Como se relacionar com Deus",
+            "Como lidar com o bullying",
+            "Se livre da pornografia",
+            "O melhor pai do mundo",
+            "Mentalidade de Aço Forjando a Nova Versão de Si Mesmo",
+            "MANUAL DE AUTODEFESA RAPIDA",
+            "Lei da atração ao favor do homem",
+            "Homens modernos que inova o guarda-roupa",
+            "Equilibrio mental",
+            "Empreendedor do zero"
+        ];
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            if (query.length < 2) {
+                searchResults.classList.add('hidden');
+                return;
+            }
+
+            const filteredEbooks = ebooks.filter(ebook => 
+                ebook.toLowerCase().includes(query)
+            );
+
+            if (filteredEbooks.length > 0) {
+                searchResults.innerHTML = '';
+                filteredEbooks.forEach(ebook => {
+                    const div = document.createElement('div');
+                    div.className = 'p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-200 text-gray-800';
+                    div.textContent = ebook;
+                    div.addEventListener('click', () => {
+                        searchInput.value = ebook;
+                        searchResults.classList.add('hidden');
+                        
+                        // Scroll to the ebook card
+                        const ebookElements = document.querySelectorAll('h3');
+                        for (let element of ebookElements) {
+                            if (element.textContent.includes(ebook)) {
+                                element.parentElement.scrollIntoView({ behavior: 'smooth' });
+                                element.parentElement.classList.add('ring-4', 'ring-yellow-400');
+                                setTimeout(() => {
+                                    element.parentElement.classList.remove('ring-4', 'ring-yellow-400');
+                                }, 2000);
+                                break;
+                            }
+                        }
+                    });
+                    searchResults.appendChild(div);
+                });
+                searchResults.classList.remove('hidden');
+            } else {
+                searchResults.innerHTML = '<div class="p-3 text-gray-500">Nenhum eBook encontrado</div>';
+                searchResults.classList.remove('hidden');
+            }
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.classList.add('hidden');
+            }
+        });
+
+        // FAQ functionality
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (answer.classList.contains('hidden')) {
+                    answer.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.classList.add('hidden');
+                    icon.style.transform = 'rotate(0)';
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94c0e151704b8c5e',t:'MTc0OTMwNjk3MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
